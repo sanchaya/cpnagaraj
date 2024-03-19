@@ -159,13 +159,29 @@
     
     // Function to fetch and display videos from YouTube channel
     function fetchVideos() {
-        fetch('http://localhost:3000/videos') // Assuming your local server is running on port 3000
+
+        // // Function to fetch playlists for a channel using pagination
+function fetchAllChannelPlaylists(channelId, pageToken = '') {
+    const apiKey = "AIzaSyDuAOaASWKbVh-XA1IVP4IzSvnp5eYez1k";
+    const maxResults = 50; // Maximum number of playlists per page
+    let playlists = [];
+
+    fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=${channelId}&key=${apiKey}&maxResults=${maxResults}&pageToken=${pageToken}`)
         .then(response => response.json())
-        .then(playlists => {
-            // Once playlists are received, render them
-            renderPlaylists(playlists);
+        .then(data => {
+            playlists = playlists.concat(data.items);
+            const nextPageToken = data.nextPageToken;
+            if (nextPageToken) {
+                // If there are more playlists, recursively fetch the next page
+                fetchAllChannelPlaylists(channelId, nextPageToken);
+            } else {
+                // All playlists have been fetched, render them
+                renderPlaylists(playlists);
+            }
         })
-        .catch(error => console.error("Error fetching videos:", error));
+        .catch(error => console.error("Error fetching channel playlists:", error));
+}
+       
 
     // Render playlists on your website
 function renderPlaylists(playlists) {
@@ -186,7 +202,8 @@ function renderPlaylists(playlists) {
     $('#filterList').hide();
     $('#filterBy').hide();
 }
-
+const channelId = "UCNSZ90nLF80bwP-ZZ9zVvhA";
+fetchAllChannelPlaylists(channelId);
     }
     $(document).ready(function() {
         function displayBooks(){
