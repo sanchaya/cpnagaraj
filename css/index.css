@@ -521,6 +521,28 @@ cite {
 form {
   margin: 0 0 18px;
 }
+
+
+
+
+
+#issueswrap.videos .playlist {
+  display: flex;
+  flex-wrap: wrap; /* Allow playlists to wrap to the next line */
+  justify-content: space-between;
+  width: calc(33.33% - 30px); /* 33.33% width for each playlist with 20px margin between them */
+  margin-right: 30px; 
+  margin-bottom: 30px;
+  float: left; /* Float the playlist items to the left */
+}
+
+#issueswrap.videos .playlist:nth-child(3n) {
+  margin-right: 0; /* Remove right margin for every third playlist to ensure three playlists per row */
+}
+
+
+
+
 input {
   font-size: 13px;
   font-weight: normal;
@@ -1578,6 +1600,25 @@ a#infos:hover {
  #filterBy .active {
   color: #fff;
 }
+#tab {
+  float: left;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+#tab li {
+  float: left;
+  margin: 0 0 0 10px;
+  list-style: none;
+}
+#tab li:first-child {
+  margin-left: 0;
+}
+#tab a {
+  color: #eedb59;
+}
+ #tab .active {
+  color: #fff;
+}
 /*!
  * Bootstrap Responsive v2.0.4
  *
@@ -1656,6 +1697,9 @@ a#infos:hover {
   }
 }
 @media (max-width: 480px) {
+  #issueswrap.videos .playlist {
+    width: calc(80% - 20px);
+  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
@@ -1723,6 +1767,9 @@ a#infos:hover {
   }
 }
 @media (max-width: 767px) {
+  #issueswrap.videos .playlist {
+    width: calc(80% - 20px);
+  }
   body {
     padding: 120px 20px 0;
   }

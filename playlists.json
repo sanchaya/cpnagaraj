@@ -1,0 +1,885 @@
+{
+    "kind": "youtube#playlistListResponse",
+    "etag": "3dR1QIzF4md1oB6p1z8jZd8xVyc",
+    "pageInfo": {
+      "totalResults": 19,
+      "resultsPerPage": 25
+    },
+    "items": [
+      {
+        "kind": "youtube#playlist",
+        "etag": "mi4S9Q-IZEUNkFuauiBFM5eFg3g",
+        "id": "PLKWXVKefPjyEiyjPYSpJB8sISzixdowRi",
+        "snippet": {
+          "publishedAt": "2023-12-15T18:12:27Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ಕನ್ನಡ ಜಗತ್ತು ಅರ್ಧ ಶತಮಾನ",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/NFwA_WXHgXw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/NFwA_WXHgXw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/NFwA_WXHgXw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/NFwA_WXHgXw/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/NFwA_WXHgXw/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ಕನ್ನಡ ಜಗತ್ತು ಅರ್ಧ ಶತಮಾನ",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 91
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "ZYinkm8uu_yatwiF7qn1LV3KMnE",
+        "id": "PLKWXVKefPjyEzsPDRGA4qK4cicuQYIvrZ",
+        "snippet": {
+          "publishedAt": "2023-07-27T16:00:35Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "BERTRAND  RUSSEL : The  Conquest  Of  Happiness",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/0FNFvRjepd0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/0FNFvRjepd0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/0FNFvRjepd0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/0FNFvRjepd0/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/0FNFvRjepd0/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "BERTRAND  RUSSEL : The  Conquest  Of  Happiness",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 64
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "iwWZN2FPWR5F5oELRFG43YGRp40",
+        "id": "PLKWXVKefPjyF43fMh6ickps6BAvm0vB3u",
+        "snippet": {
+          "publishedAt": "2023-05-31T02:01:35Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ಆಣೆ ಪ್ರಮಾಣಗಳ ಓದು",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/S4tPL1gyQdk/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/S4tPL1gyQdk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/S4tPL1gyQdk/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/S4tPL1gyQdk/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/S4tPL1gyQdk/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ಆಣೆ ಪ್ರಮಾಣಗಳ ಓದು",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 10
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "y9VLl4YB-6fTSJccOkehn0DLG4A",
+        "id": "PLKWXVKefPjyFCLFgehiEtnPyN4IRxUb1L",
+        "snippet": {
+          "publishedAt": "2023-04-12T16:31:20Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ವೇದಗಳಲ್ಲಿ ಜನಸಾಮಾನ್ಯರು",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/nmPeG4ghbOw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/nmPeG4ghbOw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/nmPeG4ghbOw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/nmPeG4ghbOw/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/nmPeG4ghbOw/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ವೇದಗಳಲ್ಲಿ ಜನಸಾಮಾನ್ಯರು",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 40
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "vd70UmqzwnRMYhQpxJHeaCOGKJY",
+        "id": "PLKWXVKefPjyFgHo_JzaBrx6zKMMEfl7uV",
+        "snippet": {
+          "publishedAt": "2023-02-27T09:24:09Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ಎದೆಗೆ ಬಿದ್ದ ಅಕ್ಷರ",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/UBxmovASSC4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/UBxmovASSC4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/UBxmovASSC4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/UBxmovASSC4/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/UBxmovASSC4/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ಎದೆಗೆ ಬಿದ್ದ ಅಕ್ಷರ",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 29
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "duec6aZsgK5yhG83ka1UPCCj2-w",
+        "id": "PLKWXVKefPjyHh6nu5AwXWLqAXbMrc7Bhx",
+        "snippet": {
+          "publishedAt": "2022-12-01T12:31:49Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ವೈಚಾರಿಕ ಬರಹಗಳು",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/BL7aYKLkhhg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/BL7aYKLkhhg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/BL7aYKLkhhg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/BL7aYKLkhhg/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/BL7aYKLkhhg/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ವೈಚಾರಿಕ ಬರಹಗಳು",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 13
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "KJtTtfi89lzJ-lUPP_tMazu7hS0",
+        "id": "PLKWXVKefPjyG-ZSh4wbgywbc1UD78avWC",
+        "snippet": {
+          "publishedAt": "2022-09-23T13:58:22Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ನುಡಿಯರಿಮೆ ಬರಹಗಳು",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/n2ncgSnh-II/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/n2ncgSnh-II/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/n2ncgSnh-II/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/n2ncgSnh-II/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/n2ncgSnh-II/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ನುಡಿಯರಿಮೆ ಬರಹಗಳು",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 26
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "A0I30Zy_JAr1DyqCbed-w2UqwG4",
+        "id": "PLKWXVKefPjyHqFD6GeWzDbJq1NRfZmNYu",
+        "snippet": {
+          "publishedAt": "2022-09-01T14:23:48Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ಸಮಗ್ರ  ಬುದ್ಧ  ಸಾಹಿತ್ಯ  ಮಾಲೆ",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/G464OlQPkn0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/G464OlQPkn0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/G464OlQPkn0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/G464OlQPkn0/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/G464OlQPkn0/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ಸಮಗ್ರ  ಬುದ್ಧ  ಸಾಹಿತ್ಯ  ಮಾಲೆ",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 20
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "N3ixzfIieN4QP1jkKfdeD8IFRAE",
+        "id": "PLKWXVKefPjyFvogDFMUNxp67aLh5I1scJ",
+        "snippet": {
+          "publishedAt": "2022-07-23T06:48:20Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ಭಾಷೆಯ  ಬಗೆಗೆ  ನೀವೇನು  ಬಲ್ಲಿರಿ ?",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/Sq1R4de182k/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/Sq1R4de182k/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/Sq1R4de182k/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/Sq1R4de182k/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/Sq1R4de182k/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ಭಾಷೆಯ  ಬಗೆಗೆ  ನೀವೇನು  ಬಲ್ಲಿರಿ ?",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 41
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "MDMsHQ5NlliZlauKIWE4XJNqbiM",
+        "id": "PLKWXVKefPjyF4VT_beuaMn9l8tdAcpeCa",
+        "snippet": {
+          "publishedAt": "2022-05-09T19:54:58Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ಪಂಪ ಭಾರತ ಪ್ರಸಂಗಗಳು ಪಾಡ್ ಕಾಸ್ಟ್",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/6uOSptXo3WM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/6uOSptXo3WM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/6uOSptXo3WM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/6uOSptXo3WM/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/6uOSptXo3WM/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ಪಂಪ ಭಾರತ ಪ್ರಸಂಗಗಳು ಪಾಡ್ ಕಾಸ್ಟ್",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 9
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "-ZhtasmBuy-d3Q6_ia4cuIEzrHE",
+        "id": "PLKWXVKefPjyFQOjMyxzZLuCjSSNQl8M9C",
+        "snippet": {
+          "publishedAt": "2021-12-11T06:35:37Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Kuvempu Kavanagala Odu",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/htD-BYI2xvc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/htD-BYI2xvc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/htD-BYI2xvc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/htD-BYI2xvc/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/htD-BYI2xvc/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Kuvempu Kavanagala Odu",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 13
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "74kgS4bfGST-es6_KJ5YmI0S1n0",
+        "id": "PLKWXVKefPjyEq9xSIQw3MLTRux3UlT88T",
+        "snippet": {
+          "publishedAt": "2021-10-05T16:54:13Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Janapara Chetana Dr. C. Bandegowda",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/mV9EiF5oKko/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/mV9EiF5oKko/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/mV9EiF5oKko/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/mV9EiF5oKko/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/mV9EiF5oKko/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Janapara Chetana Dr. C. Bandegowda",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 15
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "mEzNes3Fcpb5S60Esn4AtYDeNq0",
+        "id": "PLKWXVKefPjyGn71adAvikt0IIuJUvJDVl",
+        "snippet": {
+          "publishedAt": "2021-10-05T16:52:03Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Halligadina Roovari",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ST0KYoEMJmM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ST0KYoEMJmM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ST0KYoEMJmM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/ST0KYoEMJmM/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/ST0KYoEMJmM/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Halligadina Roovari",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 16
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "r8HFgtZsteX-57mDI5EKOUVXM9U",
+        "id": "PLKWXVKefPjyGS70tY_3ti_sK7dlFkYjH-",
+        "snippet": {
+          "publishedAt": "2021-04-24T14:53:18Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Vachanadinda Ayda Salugala Odu",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/xEQW2fR3kXI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/xEQW2fR3kXI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/xEQW2fR3kXI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/xEQW2fR3kXI/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/xEQW2fR3kXI/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Vachanadinda Ayda Salugala Odu",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 162
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "pOjmUWW5nnqX34MQJ1mAUu41HYU",
+        "id": "PLKWXVKefPjyEY0RR-LLeo4SysbzaQEcr2",
+        "snippet": {
+          "publishedAt": "2021-03-28T11:47:31Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Basavanna Vachanagala Odu",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/7vtqD4dwfLQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/7vtqD4dwfLQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/7vtqD4dwfLQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/7vtqD4dwfLQ/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/7vtqD4dwfLQ/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Basavanna Vachanagala Odu",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 26
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "bQ_t1DFesRzJRXCnpi_zmWPgeUM",
+        "id": "PLKWXVKefPjyEp456HRgQuzfd6iiZkM3zj",
+        "snippet": {
+          "publishedAt": "2021-03-28T11:40:08Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "ಮುದ್ದೆ ಗಂಟು",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/9gbkTFnNo60/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/9gbkTFnNo60/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/9gbkTFnNo60/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/9gbkTFnNo60/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/9gbkTFnNo60/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "ಮುದ್ದೆ ಗಂಟು",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 60
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "0UoxYC1L9C63B07is0fvx6r7iZw",
+        "id": "PLKWXVKefPjyHnYr-73PBVGnW-9RhVx_-k",
+        "snippet": {
+          "publishedAt": "2020-12-31T05:35:35Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Shiva Sharana Sharaneyara Vachanagala Odu",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/nsU4Ba2aiug/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/nsU4Ba2aiug/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/nsU4Ba2aiug/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/nsU4Ba2aiug/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/nsU4Ba2aiug/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Shiva Sharana Sharaneyara Vachanagala Odu",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 52
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "QYM8POU0iC4RXEQGvg8Y5zDZEto",
+        "id": "PLKWXVKefPjyHV94UcsLxJ5vWVwgduzCfJ",
+        "snippet": {
+          "publishedAt": "2020-11-16T05:49:54Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Allammana Vachanagala Odu",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/FZBrIRaPAk4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/FZBrIRaPAk4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/FZBrIRaPAk4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/FZBrIRaPAk4/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/FZBrIRaPAk4/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Allammana Vachanagala Odu",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 36
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "5G_fJNjT2P2HTUjZLRvj_2_ZIno",
+        "id": "PLKWXVKefPjyESc5HjGMtOoM6AYartUo2T",
+        "snippet": {
+          "publishedAt": "2020-10-02T04:15:38Z",
+          "channelId": "UCNSZ90nLF80bwP-ZZ9zVvhA",
+          "title": "Sarvajnana Odu",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/cJl85rlY8a4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/cJl85rlY8a4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/cJl85rlY8a4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/cJl85rlY8a4/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/cJl85rlY8a4/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "C P Nagaraj",
+          "localized": {
+            "title": "Sarvajnana Odu",
+            "description": ""
+          }
+        },
+        "contentDetails": {
+          "itemCount": 13
+        }
+      }
+    ]
+  }
+  

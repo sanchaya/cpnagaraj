@@ -91,7 +91,13 @@
                 </a>
             </div>
             <div class="span12 row-fluid">
-                <p class="span1">Filter by :</p>
+                <ul id="tab">
+                    <li><a href="#books" >Books</a></li>
+                    <li><a href="#videos" >Videos</a></li>
+                </ul>
+            </div>
+            <div class="span12 row-fluid">
+                <p class="span1" id="filterList">Filter by :</p>
                 <ul id="filterBy">
                     <li><a href="#" data-level="any" class="active" title="filter books by All">All</a></li>
                     <li><a href="#" data-level="2000" title="filter books by year">2000</a></li>
@@ -102,7 +108,7 @@
         </div>
 
         <!-- ////////// WRAPPER BOOKS -->
-        <div class="row" id="issueswrap"></div>
+        <div  id="issueswrap"></div>
     </div>
 
     <!-- ==========================
@@ -145,9 +151,45 @@
             btFilterBy.removeClass(active);
             $(this).addClass(active);
         });
+        $('#issueswrap').addClass('row');
+        $('#filterList').show();
+        $('#filterBy').show();
     }
 
+    
+    // Function to fetch and display videos from YouTube channel
+    function fetchVideos() {
+        fetch('http://localhost:3000/videos') // Assuming your local server is running on port 3000
+        .then(response => response.json())
+        .then(playlists => {
+            // Once playlists are received, render them
+            renderPlaylists(playlists);
+        })
+        .catch(error => console.error("Error fetching videos:", error));
+
+    // Render playlists on your website
+function renderPlaylists(playlists) {
+    const container = document.getElementById("issueswrap");
+    container.innerHTML = ''; // Clear existing content
+    
+    playlists.forEach(playlist => {
+        const playlistItem = document.createElement("div");
+        playlistItem.classList.add("playlist");
+        playlistItem.innerHTML = `
+        <br>
+            <h2>${playlist.snippet.title}</h2>
+            <iframe width="450" height="300" src="https://www.youtube.com/embed/videoseries?list=${playlist.id}" frameborder="0" allowfullscreen></iframe>
+        `;
+        container.appendChild(playlistItem);
+    });
+    $('#issueswrap').addClass('videos');
+    $('#filterList').hide();
+    $('#filterBy').hide();
+}
+
+    }
     $(document).ready(function() {
+        function displayBooks(){
         // get the data and compile into the html template
         $.getJSON('./issues.json?' + Math.random(), function(data) {
             var template = $('#booktpl').html(),
@@ -155,10 +197,23 @@
 
             data.books.sort(randOrd);
             issuesWrap.html(Mustache.to_html(template, data));
-
+            $('#filterList').show();
             filterBy();
         });
+    }
 
+        displayBooks();
+// Handle click on Videos tab
+$('#tab li a[href="#videos"]').on('click', function(e) {
+        e.preventDefault();
+        fetchVideos(); // Fetch and display videos from YouTube
+    });
+
+    // Handle click on Books tab
+    $('#tab li a[href="#books"]').on('click', function(e) {
+        e.preventDefault();
+        displayBooks();
+    });
         var // var's info
             jsInfos = $('#jsinfos'),
             btInfo = $('a.#infos');
