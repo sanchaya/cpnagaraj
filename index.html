@@ -22,7 +22,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="./css/index.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/index.css?v=2" media="all">
 
     <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 
@@ -99,17 +99,7 @@
             <div class="span12 row-fluid">
                 <p class="span1" id="filterList">Filter by :</p>
                 <ul id="filterBy">
-                    <li><a href="#" data-level="any" class="active" title="filter books by All">All</a></li>
-                    <li><a href="#" data-level="2004" title="filter books by year">2004</a></li>
-                    <li><a href="#" data-level="2008" title="filter books by year">2008</a></li>
-                    <li><a href="#" data-level="2014" title="filter books by year">2014</a></li>
-                    <li><a href="#" data-level="2019" title="filter books by year">2019</a></li>
-                    <li><a href="#" data-level="2020" title="filter books by year">2020</a></li>
-                    <li><a href="#" data-level="2021" title="filter books by year">2021</a></li>
-                    <li><a href="#" data-level="2022" title="filter books by year">2022</a></li>
-                    <li><a href="#" data-level="2023" title="filter books by year">2023</a></li>
-                    <li><a href="#" data-level="2024" title="filter books by year">2024</a></li>
-                    <li><a href="#" data-level="2025" title="filter books by year">2025</a></li>
+                    <li><a href="#" data-level="any" class="active">All</a></li>
                 </ul>
             </div>
         </div>
@@ -128,132 +118,103 @@
           Each book has its own copyright/license. Please read the metadata on the book page. </p>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <script src="./js/mustache.js"></script>
 
-    <script type="text/javascript">
+        <script type="text/javascript">
+    (function() {
+        var $filterBy, $issuesWrap, $reader, $readerFrame,
+            currentFilter = 'any';
 
-    function randOrd(){
-      return (Math.round(Math.random())-0.5);
-    }
+        function getYears(books) {
+            var seen = {}, years = [];
+            books.forEach(function(b) {
+                var y = String(b.level);
+                if (y !== '' && !seen[y]) {
+                    seen[y] = true;
+                    years.push(y);
+                }
+            });
+            return years.sort(function(a, b) {
+                var numA = parseInt(a, 10), numB = parseInt(b, 10);
+                if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
+                return a.localeCompare(b);
+            });
+        }
 
-    function filterBy() {
-        var // var's sort by
-            active = 'active',
-            btFilterBy = $('#filterBy').find('a'),
-            booksection = $('.booksection');
-
-        // interaction filter by level
-        btFilterBy.on('click', function(e) {
-            e.preventDefault();
-            var level = $(this).data('level');
-            if (level==='any') {
-                // restore all books
-                booksection.show();
-            } else {
-                booksection.not('.' + level).fadeOut('fast');
-                booksection.filter('.' + level).fadeIn('fast');
+        function renderFilters(years, hasUnknown) {
+            if (hasUnknown) {
+                $filterBy.append('<li><a href="#" data-level="unknown">Unknown</a></li>');
             }
+            years.forEach(function(year) {
+                $filterBy.append('<li><a href="#" data-level="' + year + '">' + year + '</a></li>');
+            });
+        }
 
-            btFilterBy.removeClass(active);
-            $(this).addClass(active);
-        });
-        $('#issueswrap').addClass('row');
-        $('#filterList').show();
-        $('#filterBy').show();
-    }
-
-    
-    // Function to fetch and display videos from YouTube channel
-    function fetchVideos() {
-
-        // // Function to fetch playlists for a channel using pagination
-function fetchAllChannelPlaylists(channelId, pageToken = '') {
-    const apiKey = "AIzaSyDuAOaASWKbVh-XA1IVP4IzSvnp5eYez1k";
-    const maxResults = 50; // Maximum number of playlists per page
-    let playlists = [];
-
-    fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=${channelId}&key=${apiKey}&maxResults=${maxResults}&pageToken=${pageToken}`)
-        .then(response => response.json())
-        .then(data => {
-            playlists = playlists.concat(data.items);
-            const nextPageToken = data.nextPageToken;
-            if (nextPageToken) {
-                // If there are more playlists, recursively fetch the next page
-                fetchAllChannelPlaylists(channelId, nextPageToken);
+        function filterBooks(level) {
+            if (level === 'any') {
+                $('.booksection').show();
             } else {
-                // All playlists have been fetched, render them
-                renderPlaylists(playlists);
+                $('.booksection').hide();
+                $('.booksection.' + level).show();
             }
-        })
-        .catch(error => console.error("Error fetching channel playlists:", error));
-}
-       
+            currentFilter = level;
+        }
 
-    // Render playlists on your website
-function renderPlaylists(playlists) {
-    const container = document.getElementById("issueswrap");
-    container.innerHTML = ''; // Clear existing content
-    
-    playlists.forEach(playlist => {
-        const playlistItem = document.createElement("div");
-        playlistItem.classList.add("playlist");
-        playlistItem.innerHTML = `
-        <br>
-            <h2>${playlist.snippet.title}</h2>
-            <iframe width="450" height="300" src="https://www.youtube.com/embed/videoseries?list=${playlist.id}" frameborder="0" allowfullscreen></iframe>
-        `;
-        container.appendChild(playlistItem);
-    });
-    $('#issueswrap').addClass('videos');
-    $('#filterList').hide();
-    $('#filterBy').hide();
-}
-const channelId = "UCNSZ90nLF80bwP-ZZ9zVvhA";
-fetchAllChannelPlaylists(channelId);
-    }
-    $(document).ready(function() {
-        function displayBooks(){
-        // get the data and compile into the html template
-        $.getJSON('./issues.json?' + Math.random(), function(data) {
-            var template = $('#booktpl').html(),
-                issuesWrap = $('#issueswrap');
+        function initFilters() {
+            $filterBy.on('click', 'a', function(e) {
+                e.preventDefault();
+                var level = $(this).data('level');
+                if (level === currentFilter) return;
+                $filterBy.find('a').removeClass('active');
+                $(this).addClass('active');
+                filterBooks(level);
+            });
+        }
 
-            data.books.sort(randOrd);
-            issuesWrap.html(Mustache.to_html(template, data));
-            $('#filterList').show();
-            filterBy();
+        $(document).ready(function() {
+            $filterBy = $('#filterBy');
+            $issuesWrap = $('#issueswrap');
+            $reader = $('#bookreader');
+            $readerFrame = $('#readerFrame');
+
+            $.getJSON('./issues.json?' + Date.now())
+            .done(function(data) {
+                var years = getYears(data.books);
+                var hasUnknown = data.books.some(function(b) { return String(b.level) === ''; });
+                renderFilters(years, hasUnknown);
+                initFilters();
+                data.books.sort(function() { return 0.5 - Math.random(); });
+                $issuesWrap.html(Mustache.to_html($('#booktpl').html(), data));
+            })
+            .fail(function(jqXHR, textStatus, error) {
+                console.error('Failed to load books:', textStatus, error);
+            });
+
+            $('#jsinfos').hide();
+            $('#infos').on('click', function(e) {
+                e.preventDefault();
+                $('#jsinfos').slideToggle();
+            });
+
+            $issuesWrap.on('click', '.book-link', function(e) {
+                e.preventDefault();
+                var identifier = $(this).data('identifier');
+                $readerFrame.attr('src', 'https://archive.org/stream/' + identifier + '/?ui=embed');
+                $reader.show();
+            });
+
+            $('#closeReader').on('click', function(e) {
+                e.preventDefault();
+                $reader.hide();
+                $readerFrame.attr('src', '');
+            });
         });
-    }
-
-        displayBooks();
-// Handle click on Videos tab
-$('#tab li a[href="#videos"]').on('click', function(e) {
-        e.preventDefault();
-        fetchVideos(); // Fetch and display videos from YouTube
-    });
-
-    // Handle click on Books tab
-    $('#tab li a[href="#books"]').on('click', function(e) {
-        e.preventDefault();
-        displayBooks();
-    });
-        var // var's info
-            jsInfos = $('#jsinfos'),
-            btInfo = $('a.#infos');
-
-        // interaction show more info about it
-        jsInfos.hide();
-        btInfo.on('click', function(){
-          jsInfos.slideToggle();
-        });
-    });
-    </script>
-
-    <script id="booktpl" type="text/template">
+    })();
+    </script><script id="booktpl" type="text/template">
         {{#books}}
-         <div class="span4 booksection {{level}}">
-          <a  target="_blank" href="{{url}}">
+         <div class="span4 booksection {{#level}}{{level}}{{/level}}{{^level}}unknown{{/level}}">
+          <a class="book-link" href="{{url}}" data-identifier="{{identifier}}">
            <div class="view"> ಓದಿರಿ </div>
 
            <div title="{{ title }}" id="cover" style="background:black url('{{cover}}') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;">
@@ -275,5 +236,11 @@ $('#tab li a[href="#videos"]').on('click', function(e) {
 
       gtag('config', 'G-4R3DJ46QED');
     </script>
-  </body>
+  
+<!-- Book Reader Modal -->
+<div id="bookreader">
+    <a href="#" id="closeReader">&times;</a>
+    <iframe id="readerFrame" src=""></iframe>
+</div>
+</body>
 </html>
