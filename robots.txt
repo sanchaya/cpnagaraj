@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cpnagaraj.sanchaya.net/sitemap.xml
