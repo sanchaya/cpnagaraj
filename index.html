@@ -5,7 +5,7 @@
 <title>ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಸಂಚಯ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಪುಸ್ತಕಗಳ ಸುಲಭ ಲಭ್ಯತೆಗೆ ಡಿಜಿಟಲ್ ಸಂಚಯವನ್ನು ಸೃಷ್ಟಿಸಲಾಗಿದೆ‍!">
-<meta name="portal-design" content="9">
+<meta name="portal-design" content="11">
 <meta name="author" content="ನಾಗು ಸ್ಮಾರಕ ಪ್ರಕಾಶನ">
 <link rel="canonical" href="https://cpnagaraj.sanchaya.net/">
 <meta property="og:title" content="ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಸಂಚಯ">
@@ -27,13 +27,14 @@
 
 <header class="top">
   <div class="brand"><a class="logo" href="./" aria-label="ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಸಂಚಯ"><img src="./img/logo.png" alt="" height="40"></a>
-  <h1>ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಸಂಚಯ</h1><div class="orgs"></div></div>
+  <div class="orgs"><a class="orgname">ನಾಗು ಸ್ಮಾರಕ ಪ್ರಕಾಶನ</a></div></div>
+  <h1>ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಸಂಚಯ</h1>
   <p class="tagline"></p>
-  <section class="about"><h2>About this collection</h2><p>ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಪುಸ್ತಕಗಳ ಸುಲಭ ಲಭ್ಯತೆಗೆ ಡಿಜಿಟಲ್ ಸಂಚಯವನ್ನು ಸೃಷ್ಟಿಸಲಾಗಿದೆ‍!</p></section>
-  
+  <section class="aboutbox open"><div class="txt"><div class="clip"><p>ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಪುಸ್ತಕಗಳ ಸುಲಭ ಲಭ್ಯತೆಗೆ ಡಿಜಿಟಲ್ ಸಂಚಯವನ್ನು ಸೃಷ್ಟಿಸಲಾಗಿದೆ‍!</p></div></div></section>
 </header>
 
 <div class="bar">
+  <div class="mini" aria-hidden="true"><a href="./"><img src="./img/logo.png" alt="" height="24"></a><span>ಸಿ ಪಿ ನಾಗರಾಜ ಅವರ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಸಂಚಯ</span></div>
   <div class="controls" role="search">
     <label class="sr" for="q">Search</label>
     <input id="q" type="search" placeholder="Search title, author, year…" autocomplete="off" enterkeyhint="search">
@@ -347,6 +348,13 @@
     });
   }
 })();
+</script>
+<script>
+(function () { var h = document.querySelector('.top'), b = document.querySelector('.bar');
+  if (!h || !b || !window.IntersectionObserver) return;
+  new IntersectionObserver(function (e) { b.classList.toggle('stuck', !e[0].isIntersecting); }).observe(h);
+  document.addEventListener('click', function (e) { var t = e.target.closest('.morebtn'); if (!t) return;
+    var a = t.closest('.aboutbox'); var o = a.classList.toggle('open'); t.textContent = o ? t.dataset.less : t.dataset.more; }); })();
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRZLCXBXJZ"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RRZLCXBXJZ');</script>
